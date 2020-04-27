@@ -1,5 +1,5 @@
 const app = require('./app')
-const router = require('./config/server')
+const router = require('./node-server')
 const convert = require('./lib/convert')
 
 app.iniciaServidor()
