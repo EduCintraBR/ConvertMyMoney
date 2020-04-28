@@ -2,8 +2,6 @@ const app = require('./app')
 const router = require('./node-server')
 const convert = require('./lib/convert')
 
-app.iniciaServidor()
-
 router.get('/', (req, res) => {
   res.render('home')
 })
@@ -27,3 +25,5 @@ router.get('/cotacao', (req, res) => {
     })
   }
 })
+
+app.iniciaServidor()
