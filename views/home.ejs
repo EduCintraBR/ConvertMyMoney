@@ -1,11 +1,20 @@
 <%- include('header') %>
 <div class="flex-container">
   <form action="/cotacao" method="GET">
-    <div>
-      <input name="cotacao" type="text" placeholder="Cotação dólar">
+    <div class="boxCotacao">
+      <span>Dólar hoje: </span> R$
+      <%= cotacaoApi.cotacaoCompra %>
     </div>
     <div>
-      <input name="quantidade" type="text" placeholder="Quantidade de dólares">
+      <input name="cotacao" 
+             type="text" 
+             value="<%= cotacaoApi.cotacaoCompra %>"
+             placeholder="Cotação dólar">
+    </div>
+    <div>
+      <input name="quantidade" 
+             type="text" 
+             placeholder="Quantidade de dólares">
     </div>
     <div>
       <button>Converter</button>
