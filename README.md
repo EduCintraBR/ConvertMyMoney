@@ -23,4 +23,4 @@
 <p>Eduardo E. B. Cintra</p>
 <h4>Teste a aplicação!</h4>
 <p>Clique no link abaixo para acessar a aplicação</p>
-<p>Link em breve...</p>
+<a href="https://convertmymoney-educintra.herokuapp.com/">Convert My Money</a>
