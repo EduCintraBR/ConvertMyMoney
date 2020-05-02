@@ -1,10 +1,16 @@
 <%- include('header') %>
 <div class="flex-container">
   <form action="/cotacao" method="GET">
-    <div class="boxCotacao">
-      <span>Dólar hoje: </span> R$
-      <%= cotacaoApi.cotacaoCompra %>
-    </div>
+    <% if(cotacaoApi.cotacaoCompra === undefined) {%>
+      <div class="boxCotacao">
+        <span>Não há cotação disponível hoje...</span>
+      </div>
+    <% } else { %>
+      <div class="boxCotacao">
+        <span>Dólar hoje: </span> R$
+        <%= cotacaoApi.cotacaoCompra %>
+      </div>
+    <% } %>
     <div>
       <input name="cotacao" 
              type="text" 

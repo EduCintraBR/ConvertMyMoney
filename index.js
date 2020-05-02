@@ -5,6 +5,8 @@ const apiCotacao = require('./lib/api-bcb')
 
 router.get('/', async (req, res) => {
   const cotacaoApi = await apiCotacao.getCotacao()
+  console.log(cotacaoApi);
+  
   res.render('home', { cotacaoApi })
 })
 
