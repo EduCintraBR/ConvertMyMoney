@@ -4,9 +4,7 @@ const convert = require('./lib/convert')
 const apiCotacao = require('./lib/api-bcb')
 
 router.get('/', async (req, res) => {
-  const cotacaoApi = await apiCotacao.getCotacao()
-  console.log(cotacaoApi);
-  
+  const cotacaoApi = await apiCotacao.getCotacao()  
   res.render('home', { cotacaoApi })
 })
 
