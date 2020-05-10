@@ -18,6 +18,14 @@
     <strong>Jest: </strong>
     Biblioteca de testes unitários da aplicação.
   </li>
+  <li>
+    <strong>Bootstrap: </strong>
+    Framework front-end responsivo.
+  </li>
+  <li>
+    <strong>JQuery: </strong>
+    Biblioteca de funções JavaScript.
+  </li>
 </ul>
 <h2>Autor</h2>
 <p>Eduardo E. B. Cintra</p>
